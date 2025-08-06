@@ -132,17 +132,17 @@ async def custom_site():
 
     # Final progress bar fill
     pg_bar(all_tracks)
-    print("Succeeded 1)
+    print("Succeeded 1")
 
     # Run main script from "web" package
     web_main = Path("/data/data/web/assets/main.py")
-    print("Succeeded 2)
+    print("Succeeded 2")
 
     await TopLevel_async_handler.start_toplevel(platform.shell, console=window.python.config.debug)
-    print("Succeeded 3)
+    print("Succeeded 3")
 
     __import__(__name__).__file__ = str(web_main)
-    print("Succeeded 4)
+    print("Succeeded 4")
 
     if not platform.window.MM.UME:
         prompt = fnt.render("Ready to start !", True, "blue")
